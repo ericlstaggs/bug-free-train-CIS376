@@ -1,16 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document New Title</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document New Title</title>
+
+  <!-- internal stylesheet -->
+  <style>
+    body, html {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 20px;
+      background-color:#3e4ccf;
+      height: 200%;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+      color: aqua;
+    }
+
+  .login-container {
+    border: 20px 20px;
+    align-items: center;
+  }
+
+  .beach {
+    background-image:url("beach_background.jpg");
+    align-items: center;
+  }
+
+/* The hero image */
+  .hero-image {
+  /* Use "linear-gradient" to add a darken background effect to the image (photographer.jpg). This will make the text easier to read */
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("s1_Facts-sailing-header.webp");
+
+  /* Set a specific height */
+    height: 50%;
+
+  /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+/* Place text in the middle of the image */
+  .hero-text {
+    font-style: italic;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+  }
+
+  .rounded-button {
+    background-color: #04AA6D; /* Green background */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px; /* Adjust the value for desired roundness */
+  }
+
+/* Create two equal columns that floats next to each other */
+  .column {
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border: 20px 20px;
+  }
+
+  h1 {
+    color: black;
+  }
+
+  .card1 {
+    align-items: center;
+    width: 50%;
+    background-size: cover;
+    color: black;
+    background-image: url("windsurfing1.jpg");
+    vertical-align: middle;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+  }
+
+  .card-title {
+    color: black;
+  }
+
+  .card2 {
+    background-image: url("WingSurfing1.jpg");
+    color: black;
+  }
+
+</style
 </head>
-<body>
-    <h1>👌
-        Hello Internet
-    </h1>
-    <p>
-        From Eric
-    </p>
+
+<body class="beach">
+  <div class="hero-image">
+      <div class="hero-text">
+        <h1>Water Sprorts</h1>
+        <h3>Like Sailing</h3>
+
+    <!-- login container-->
+
+  <div class="login-container">
+    <form id="loginForm">
+      <div class="form-group">
+        <input class="rounded-button" type="text" placeholder="username" style="background-color: blanchedalmond;" id="username" name="username"  required>
+      </div>
+
+      <div class="form-group">
+        <input class="rounded-button" type="password" placeholder="password" style="background-color: blanchedalmond;" id="password" name="password" required>
+      </div>
+
+      <button type="submit" style="background-color: darkcyan;" class="rounded-button">Login</button>
+      <div id="message" class="message"></div>
+    </form>
+
+      <!-- search form hypertext-->
+
+    <form role="search" action="/searchpage" method="get">
+      <label for="site-search">Search the site:</label>
+        <input type="search" id="site-search" name="q" placeholder="Enter a search term..." />
+      <button type="submit">Search</button>
+    </form>
+
+  </div>
+  <script>
+    console.log("password is: lasagna");
+  </script>
+  </div>
+</div>
+
+    <!--card hypertext-->
+    <div class="card1">
+      <h2 class="card-title">Wind Surfing</h2>
+        <p class="card-text">Windsurfing is a dynamic water sport combining sailing and surfing,
+           using a sail-powered board to glide across water, requiring skill in balance, steering,
+            and sail control to harness wind power for speed and maneuvers, offering significant physical and mental rewards.
+             Key skills involve mastering the beach start, adjusting sail power (sheeting in/out), understanding wind direction
+              (upwind/downwind), and learning techniques like "wafting" to control the sail, all while controlling the board for
+               planing (skimming) across the water. Risks include falls and potential injuries, but basic safety protocols and
+                proper gear help manage them, while health benefits come from the core strength, balance, and cardiovascular workout it provides. </p>
+          <a href="#" class="card-link">A Link</a>
+            <ul>
+              <h2 class="card-title">Basis Skills</h2>
+              <li>Beach Start: The fundamental way to begin, bringing the board into knee-deep water, 
+                sweeping the sail up, and using the wind to pull you onto the board.</li>
+
+              <li>Planing: The thrilling stage where the board lifts and skims the water surface, 
+                achieved by efficiently controlling the sail and board.</li>
+
+              <li>Sheeting: Pulling the sail in (sheet in) to accelerate or depowering by letting it out (sheet out) for control,
+                 especially during transitions.</li>
+
+              <li>Wafting: A technique to control the sail in light winds by letting it "breathe," 
+                creating smooth power rather than turbulent force, preventing strain.</li>
+              
+                <li>Harness & Footstraps: Using lines attached to the boom and foot straps allows you to connect your body to 
+                  the rig, counteracting sail pressure and improving control in stronger winds.</li>
+            </ul>
+</div>
+
+<!-- control / "wack" is shortcut for comments -->
 </body>
+
 </html>
