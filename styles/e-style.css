@@ -95,3 +95,11 @@ h2 {
 .inlineList>li {
     display: inline;
 }
+
+footer {
+  text-align: center;
+}
+
+a {
+  text-align: center;
+}
