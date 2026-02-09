@@ -6,3 +6,5 @@ git add .
 git commit -m
 git push
 
+
+alt z gives word wrap

@@ -1,34 +1,38 @@
+document.addEventListener('DOMContentLoaded', function () {
+
+  console.log("password is: lasagna");
+});
 
 
 
-console.log("password is : lasagna");
+
 
 //when button clicked, get username and password. 
 
+const login = document.getElementById('login-button');
+
 //pass an Immediately Invoked Function Expression: IIFE.
-document.addEventListener('submit', function (event) {
-
-  // prevent default actions like adding to the url to get hacked
-  event.preventDefault();
-
-  // Get form values from the DOM 
-  const username = document.getElementById('username').value;
-  const password = document.getElementById('password').value;
-
-  console.log("username + pwd:", username + ", " + password);
-
-  // Store in session storage
-  sessionStorage.setItem('username', username);
-  sessionStorage.setItem('password', password);
-  // sessionStorage.setItem('loginTimestamp', new Date().toISOString());
-  // sessionStorage.setItem('loginAttempts', (parseInt(sessionStorage.getItem('loginAttempts') || '0') + 1).toString());
-
-  // Log to console
-  //   console.log('session username:', username);
-  //   console.log('session password:', password);
+login.addEventListener('click', function (event) {
+console.log('clicked');
 
 
-  // This takes us to the next page
-  window.location.assign("content.html");
+// Get form values from the DOM 
+const username = document.getElementById('username').value;
+const password = document.getElementById('password').value;
+
+console.log("username + pwd:", username + ", " + password);
+
+// Store in session storage
+sessionStorage.setItem('username', username);
+sessionStorage.setItem('password', password);
+// sessionStorage.setItem('loginTimestamp', new Date().toISOString());
+// sessionStorage.setItem('loginAttempts', (parseInt(sessionStorage.getItem('loginAttempts') || '0') + 1).toString());
+
+// Log to console
+console.log('session username:', username);
+console.log('session password:', password);
+
+window.location.assign("content.html"); 
 
 });
+
