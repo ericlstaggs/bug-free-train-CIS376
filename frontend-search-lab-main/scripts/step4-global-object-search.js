@@ -30,17 +30,17 @@ function handleGlobalObjectSearch() {
   const results = jsObjectData.filter(item => {
     const values = Object.values(item);
     // Debugging: Uncomment to see what is checked and matched
-    // const matches = values.map(value => {
-    //   const strVal = String(value).toLowerCase();
-    //   const isMatch = strVal.includes(query);
-    //   console.log(`Checking value:`, value, `->`, strVal, `Match:`, isMatch);
-    //   return isMatch;
-    // });
-    // const itemMatch = matches.some(Boolean);
-    // if (itemMatch) {
-    //   console.log('MATCHED ITEM:', item);
-    // }
-    // return itemMatch;
+    const matches = values.map(value => {
+      const strVal = String(value).toLowerCase();
+      const isMatch = strVal.includes(query);
+      console.log(`Checking value:`, value, `->`, strVal, `Match:`, isMatch);
+      return isMatch;
+    });
+    const itemMatch = matches.some(Boolean);
+    if (itemMatch) {
+      console.log('MATCHED ITEM:', item);
+    }
+    return itemMatch;
     
     // Normal search logic:
     return values.some(value => String(value).toLowerCase().includes(query));

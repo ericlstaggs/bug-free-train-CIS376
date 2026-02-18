@@ -1,7 +1,7 @@
 const searchResults = document.getElementById("searchResults");
 
 // hardcoded search term
-const target = "Hote"; //todo: change to "Hote"
+const target = "Hotel"; //todo: change to "Hotel"
 let found = false;
 
 // manual loop search
@@ -22,6 +22,6 @@ if (found) {
 }
 
 // ternary operators! condition ? valueIfTrue : valueIfFalse;
-// searchResults.innerHTML = found
-//   ? `<li>Found: ${target}</li>`
-//   : `<li>Not found: ${target}</li>`;
+searchResults.innerHTML = found
+  ? `<li>Found: ${target}</li>`
+  : `<li>Not found: ${target}</li>`;
