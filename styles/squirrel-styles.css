@@ -1,0 +1,23 @@
+.search-container {
+  position: relative; /* Container needs relative position */
+}
+
+.squirrel-icon {
+  position: absolute; /* Icon needs absolute position relative to container */
+  left: 10px; /* Adjust as needed */
+  top: 50%;
+  transform: translateY(-50%); /* Centers the icon vertically */
+  /* Ensure icon clicks don't interfere with the input */
+  pointer-events: none; 
+  background-color: transparent; /* Make background transparent if it's an input-group-text */
+  border: none;
+}
+
+.search-input {
+  padding-left: 40px; /* Add padding to prevent text overlap, adjust based on icon size and position */
+}
+
+h1 {
+    text-align: center;
+    border: 1;
+}

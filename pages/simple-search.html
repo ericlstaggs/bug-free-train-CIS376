@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Simple Search</title>
+    <link rel="stylesheet" href="../styles/squirrel-styles.css">
+    <style>
+      .container { max-width: 700px; margin: 40px auto; }
+      #searchResults li { margin: 6px 0; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Simple Search</h1>
+      <p>Search the demo data (apps &amp; alphabet) below.</p>
+
+      <div class="input-group search-container">
+        <input id="searchInput" type="text" class="search-input" placeholder="Type to search...">
+        <button id="searchButton">Search</button>
+      </div>
+
+      <p id="searchMessage"></p>
+      <ul id="searchResults"></ul>
+    </div>
+
+    <!-- Demo data and script -->
+    <script src="../frontend-search-lab-main/assets/data/data.js"></script>
+    <script src="../scripts/simple-search.js"></script>
+  </body>
+</html>
