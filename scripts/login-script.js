@@ -4,9 +4,6 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 
-
-
-
 //when button clicked, get username and password. 
 
 const login = document.getElementById('login-button');
