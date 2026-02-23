@@ -9,27 +9,32 @@ body {
   background-color: #f4f4f4;
 }
 
-.rubik-mono-one-regular {
-  font-family: "Rubik Mono One", monospace;
-  font-weight: 400;
-  font-style: normal;
-}
 
-
-.roboto-font {
-  font-family: "Roboto", sans-serif;
-  /* font-optical-sizing: auto;
-  font-weight: <weight>;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100; */
-}
 
 
 .login-container {
     border: solid 1px blue;
+    text-align: center;
 }
+
+#login-button {
+    /* border: solid 1px red; */
+    text-align: center;
+}
+
 
 #author {
     text-decoration: underline;
+}
+
+p {
+  text-indent: 50px;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #333;
+}
+
+.container {
+    padding-top: 60px;
+    
 }
