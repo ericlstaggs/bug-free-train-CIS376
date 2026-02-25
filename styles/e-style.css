@@ -27,6 +27,17 @@ body {
     text-decoration: underline;
 }
 
+.content-page {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.spacer {
+    min-height: 20px;
+}
+
 p {
   text-indent: 50px;
     font-size: 1.2em;

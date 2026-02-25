@@ -2,42 +2,130 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 
   <!-- linking the sytle sheet to this page -->
-  <link href="../ericslearningrepo/styles/e-style.css" rel="stylesheet">
+  <link href="../styles/e-style.css" rel="stylesheet">
+
+
 </head>
 
-<body>
-    <!-- <div id="header-placeholder"></div> -->
-    <main>
-        <!-- Unique content for this page goes here -->
-    </main>
+<body class="justify-content-center">
+
+  <div class="mt-4 p-5 bg-primary text-white rounded align-content-center align-items-center d-flex flex-column">
+    <h1 class="title-text">About</h1>
+  </div>
+  <!-- navbar code -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://github.com/" target="_blank">
+
+        <i class="bi bi-robot"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.youtube.com/watch?v=QZ7fIsUrkeE" target="_blank">Video</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Dropdown
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li>
+                <hr class="dropdown-divider">
+              </li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="about">
+            <a class="nav-link" href="../about.html">About</a>
+          </li>
+          <li class="navTemplate">
+            <a class="nav-link" href="../templates/content.html">Content</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <div class="row justify-content-center align-items-center ali" >
+      <div class="col-md-3">
+        <div class="container align-content-center">
+          <h3>Our Mission</h3>
+          <p>We are on a mission to make industrial environments safer and more efficient. By merging advanced
+            thermodynamics with 3D printing technology, we are developing a new generation of deflagration arrestors
+            that
+            provide superior protection at a fraction of the traditional cost.</p>
+          <h3>The Problem: Outdated Protection</h3>
+          <p>Traditional deflagration arrestors—critical devices designed to stop subsonic flame fronts in piping
+            systems—have remained largely unchanged for decades. They are often:</p>
+          <ul>
+            <li>Cost-Prohibitive: High manufacturing and material costs for complex internal geometries.</li>
+            <li>Difficult to Maintain: Prone to clogging and require frequent, labor-intensive cleaning.</li>
+            <li>Inefficient: Bulky designs can cause significant pressure drops, reducing overall system performance.
+            </li>
+          </ul>
+        
+      </div>
+    </div>
+  </div>
 
 
 
-    <!-- The placeholder navbar -->
-    <div id="navbar-placeholder"></div>
-    <!-- The placeholder for the body -->
 
-    <!-- The placeholder footer-->
-    <div id="footer-placeholder"></div>
-    
 
-    <!-- Your script must come AFTER the placeholder -->
-    <script src="scripts/navbar-template.js"></script>
-    <script src="scripts/about-template.js"></script>
-    <script src="scripts/footer-template.js"></script>
 
-    <script src="https://code.jquery.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"crossorigin="anonymous"></script>
- 
+  <!-- footer code -->
+  <footer class="mt-auto py-3 bg-light border-top">
+    <div class="container">
+      <div class="d-flex justify-content-center align-items-center gap-4 small text-muted flex-wrap">
 
+        <a href="https://github.com/ericlstaggs/ericslearningrepo"
+          class="text-decoration-none text-muted border border-secondary-subtle rounded-pill px-3 py-1" target="_blank">
+          &lt; <i class="bi bi-github"></i> source code &gt;
+        </a>
+
+        <span>
+          &copy; 2026 Eric Staggs
+        </span>
+
+        <a href="https://github.com/ericlstaggs"
+          class="text-decoration-none text-muted border border-secondary-subtle rounded-pill px-3 py-1" target="_blank">
+          <i class="bi bi-github"></i>
+          <i class="bi bi-person-circle"></i>
+          GitHub Profile
+        </a>
+
+      </div>
+    </div>
+  </footer>
+
+  <!-- makes the dropdown work -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+  <script src="../scripts/session.js"></script>
 
 </body>
 
