@@ -4,25 +4,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About</title>
+  <title>Author Page</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
 
   <!-- linking the sytle sheet to this page -->
   <link href="../styles/e-style.css" rel="stylesheet">
-
-
 </head>
 
-<body class="justify-content-center">
-
-  <div class="mt-4 p-5 bg-primary text-white rounded align-content-center align-items-center d-flex flex-column">
-    <h1 class="title-text">About</h1>
+<body>
+<div class="mt-4 p-5 bg-primary text-white rounded align-content-center align-items-center d-flex flex-column">
+    <h1 class="title-text">Author Page</h1>
   </div>
- 
   <!-- navbar code -->
-   
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="https://github.com/" target="_blank">
@@ -57,12 +52,8 @@
           <li class="navTemplate">
             <a class="nav-link" href="../pages/content.html">Content</a>
           </li>
-          <li class="nav-item">
-            <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
-            <a class="nav-link" href="../pages/author.html">Author</a>
-          </li>
+          
         </ul>
-        
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
@@ -71,34 +62,18 @@
     </div>
   </nav>
 
-  <div class="row justify-content-center align-items-center ali" >
-      <div class="col-md-3">
-        <div class="container align-content-center">
-          <h3>Our Mission</h3>
-          <p>We are on a mission to make industrial environments safer and more efficient. By merging advanced
-            thermodynamics with 3D printing technology, we are developing a new generation of deflagration arrestors
-            that
-            provide superior protection at a fraction of the traditional cost.</p>
-          <h3>The Problem: Outdated Protection</h3>
-          <p>Traditional deflagration arrestors—critical devices designed to stop subsonic flame fronts in piping
-            systems—have remained largely unchanged for decades. They are often:</p>
-          <ul>
-            <li>Cost-Prohibitive: High manufacturing and material costs for complex internal geometries.</li>
-            <li>Difficult to Maintain: Prone to clogging and require frequent, labor-intensive cleaning.</li>
-            <li>Inefficient: Bulky designs can cause significant pressure drops, reducing overall system performance.
-            </li>
-          </ul>
-        
-      </div>
-    </div>
+
+  <div class="container mt-3 mb-5 align-content-center align-items-center d-flex flex-column">
+    <h2 class="mb-3">Eric Staggs</h2>
+    <div class="col-md-10">
+      <img src="../images/self.heic" alt="Author Image" class="img-fluid rounded-circle mb-3">
+    <p class="lead">
+      Eric Staggs is a passionate web developer with a keen interest in creating engaging and user-friendly websites. With a background in computer science, Eric has honed his skills in HTML, CSS, JavaScript, and various web development frameworks. He enjoys exploring new technologies and staying up-to-date with the latest trends in the industry. In his free time, Eric loves to share his knowledge through blogging and contributing to open-source projects.
+    </p>
+  </div>
   </div>
 
-
-
-
-
-
-  <!-- footer code -->
+ <!-- footer -->
   <footer class="mt-auto py-3 bg-light border-top">
     <div class="container">
       <div class="d-flex justify-content-center align-items-center gap-4 small text-muted flex-wrap">
@@ -123,11 +98,10 @@
     </div>
   </footer>
 
-  <!-- makes the dropdown work -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
     crossorigin="anonymous"></script>
+  <script src="../scripts/login-logout.js"></script>
   <script src="../scripts/session.js"></script>
-
 </body>
 
 </html>
