@@ -5,8 +5,8 @@
 
 
 body {
-  font-family: "Roboto", sans-serif;
-  background-color: #f4f4f4;
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f4f4;
 }
 
 
@@ -39,7 +39,7 @@ body {
 }
 
 p {
-  text-indent: 50px;
+    text-indent: 50px;
     font-size: 1.2em;
     line-height: 1.5;
     color: #333;
@@ -47,5 +47,20 @@ p {
 
 .container {
     padding-top: 60px;
-    
+
+}
+
+#lilvid {
+    align-self: auto;
+    border: 10px;
+    margin-left: 20%;
+    margin-right: 20%;
+    max-width: 60%;
+    max-width: 60%;
+}
+
+.object-fit-contain {
+    border: 10px;
+    max-width: 60%;
+    max-width: 60%;
 }
