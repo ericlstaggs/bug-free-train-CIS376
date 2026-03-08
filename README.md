@@ -1,4 +1,6 @@
-# App Title: Defligration arrestors
+# Defligration arrestors
+* Learning to code and help engineers build something that could save a life
+
 
 ### Authorship & Attribution
 *   **Developer:** Eric Staggs
@@ -35,20 +37,55 @@ https://github.com/ericlstaggs/ericslearningrepo/wiki
 ---
 
 ### Code Block & Explanation
-```javascript
-// Example of DOM -> Script -> DOM flow
-document.addEventListener('DOMContentLoaded', () => {
-    const searchInput = document.querySelector('#itemSearch');
-    const displayArea = document.querySelector('#resultsTable');
+```html
+// Example of the toobar
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="https://github.com/" target="_blank">
 
-    searchInput.addEventListener('input', (e) => {
-        const term = e.target.value.toLowerCase();
-        // Filters internal data and updates the UI state
-        const filtered = appData.filter(item => item.name.toLowerCase().includes(term));
-        renderDisplay(filtered); 
-        console.log(`Search state changed: ${term}`); // Debugging log
-    });
-});
+        <i class="bi bi-robot"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.youtube.com/watch?v=QZ7fIsUrkeE" target="_blank">Video</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Biographies
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="../pages/nick-german.html">Nick German</a></li>
+              <li><a class="dropdown-item" href="../pages/shelby-stanly.html">Shelby Stanly</a></li>
+              <li><a class="dropdown-item" href="../pages/eric-staggs.html">Eric Staggs</a></li>
+            </ul>
+          </li>
+          <li class="about">
+            <a class="nav-link" href="../pages/about.html">About</a>
+          </li>
+          <li class="navTemplate">
+            <a class="nav-link" href="../pages/content.html">Content</a>
+          </li>
+          <li class="nav-item">
+            <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+            <a class="nav-link" href="../pages/author.html">Author</a>
+          </li>
+        </ul>
+
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
 
 
