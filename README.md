@@ -32,12 +32,12 @@
 https://github.com/ericlstaggs/ericslearningrepo/wiki
 
 **Inspiration Source:** Dribble  
-**Analysis:** I modeled my grid layout/navigation bar after this site because of its clean hierarchy.
+**Analysis:** I modeled my grid layout/navigation bar after this site because of its clean hierarchy. i didn't really copy any code I just trie to keep it simple and potentially business like. 
 
 ---
 
 ### Code Block & Explanation
-* this the toolbar and all the reference to each page
+* this is the toolbar and all the reference to each page
 ```html
 // Example of the toobar
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
