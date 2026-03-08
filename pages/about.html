@@ -16,10 +16,10 @@
   <div class="mt-4 p-5 bg-primary text-white rounded align-content-center align-items-center d-flex flex-column">
     <h1 class="title-text">About</h1>
   </div>
- 
+
   <!-- navbar code -->
-   
-   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <a class="navbar-brand" href="https://github.com/" target="_blank">
 
@@ -67,62 +67,106 @@
     </div>
   </nav>
 
-  <div class="row justify-content-center align-items-center ali" >
-      <div class="col-md-3">
-        <div class="container align-content-center">
-          <h3>Our Mission</h3>
-          <p>We are on a mission to make industrial environments safer and more efficient. By merging advanced
-            thermodynamics with 3D printing technology, we are developing a new generation of deflagration arrestors
-            that
-            provide superior protection at a fraction of the traditional cost.</p>
-          <h3>The Problem: Outdated Protection</h3>
-          <p>Traditional deflagration arrestors—critical devices designed to stop subsonic flame fronts in piping
-            systems—have remained largely unchanged for decades. They are often:</p>
-          <ul>
+  <!-- video and text content -->
+  <span class="align-items-center" id="lilvid">
+
+    <!-- video -->
+    <!-- <video src="../pictures/videos/big-ideas.mp4" class="object-fit-contain" autoplay></video> -->
+
+  </span>
+
+  <!-- row 1  -->
+  <div class="row content-page align-items-center d-flex flex-row justify-content-center border 
+          border-secondary-subtle gap-4">
+    <!-- card 1 -->
+    <!-- todo: make content card  -->
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title rubik-mono-one-regular">The Problem: Outdated Protection</h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Stage of Oil Development</p>
+         
+          <p class="text-size">Traditional deflagration arrestors—critical devices designed to stop subsonic flame
+            fronts in piping systems—have remained largely unchanged for decades. They are often:</p>
+             <ul>
             <li>Cost-Prohibitive: High manufacturing and material costs for complex internal geometries.</li>
             <li>Difficult to Maintain: Prone to clogging and require frequent, labor-intensive cleaning.</li>
             <li>Inefficient: Bulky designs can cause significant pressure drops, reducing overall system performance.
             </li>
           </ul>
-        
+        </div>
+        <div class="card-footer">
+          <a class="btn btn-dark" href="https://www.bls.gov/iif/oshcfoi1.htm" target="googleStyleHtml">BLS Occupational
+            Injuries</a>
+        </div>
       </div>
     </div>
-  </div>
 
+    <!-- card 2 -->
+    <!-- todo: make content card  -->
+    <div class="col-md-3">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title rubik-mono-one-regular">Our Mission</h4>
+        </div>
+        <div class="card-body">
+          <div class="card-text">Fatalites in Oil</div>
 
-
-
-
-
-  <!-- footer code -->
-  <footer class="mt-auto py-3 bg-light border-top">
-    <div class="container">
-      <div class="d-flex justify-content-center align-items-center gap-4 small text-muted flex-wrap">
-
-        <a href="https://github.com/ericlstaggs/ericslearningrepo"
-          class="text-decoration-none text-muted border border-secondary-subtle rounded-pill px-3 py-1" target="_blank">
-          &lt; <i class="bi bi-github"></i> source code &gt;
-        </a>
-
-        <span>
-          &copy; 2026 Eric Staggs
-        </span>
-
-        <a href="https://github.com/ericlstaggs"
-          class="text-decoration-none text-muted border border-secondary-subtle rounded-pill px-3 py-1" target="_blank">
-          <i class="bi bi-github"></i>
-          <i class="bi bi-person-circle"></i>
-          GitHub Profile
-        </a>
-
+          <!-- <p class="card-text">tags: vsCode format shortcuts</p> -->
+          <!-- <p class="card-text">use this shortcut to format code in vsCode</p> -->
+          <!-- todo: why we do this...google style guide -->
+          <p class="text-size">We are on a mission to make industrial environments safer and more efficient. By merging
+            advanced
+            thermodynamics with 3D printing technology, we are developing a new generation of deflagration arrestors
+            that
+            provide superior protection at a fraction of the traditional cost.</p>
+          <!-- todo: add in copy btn -->
+        </div>
+        <div class="card-footer">
+          <a class="btn btn-dark" href="https://www.bls.gov/iif/oshcfoi1.htm" target="googleStyleHtml">BLS Occupational
+            Injuries</a>
+        </div>
       </div>
     </div>
-  </footer>
 
-  <!-- makes the dropdown work -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-    crossorigin="anonymous"></script>
-  <script src="../scripts/session.js"></script>
+    <!-- TRYING NEW FOOTER -->
+     <div id="footer-container"></div>
+
+    <!-- footer code -->
+    <!-- <footer class="mt-auto py-3 bg-light border-top">
+      <div class="container">
+        <div class="d-flex justify-content-center align-items-center gap-4 small text-muted flex-wrap">
+
+          <a href="https://github.com/ericlstaggs/ericslearningrepo"
+            class="text-decoration-none text-muted border border-secondary-subtle rounded-pill px-3 py-1"
+            target="_blank">
+            &lt; <i class="bi bi-github"></i> source code &gt;
+          </a>
+
+          <span>
+            &copy; 2026 Eric Staggs
+          </span>
+
+          <a href="https://github.com/ericlstaggs"
+            class="text-decoration-none text-muted border border-secondary-subtle rounded-pill px-3 py-1"
+            target="_blank">
+            <i class="bi bi-github"></i>
+            <i class="bi bi-person-circle"></i>
+            GitHub Profile
+          </a>
+
+        </div>
+      </div>
+    </footer> -->
+
+    <!-- makes the dropdown work -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"></script>
+    <script src="../scripts/session.js"></script>
+    <!-- footer script -->
+    <script src="../scripts/footer.js"></script>
 
 </body>
 
