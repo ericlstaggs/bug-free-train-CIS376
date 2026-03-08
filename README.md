@@ -1,13 +1,11 @@
-# Defligration arrestors
-
-# App Title: e.g., TaskMaster Pro
+# App Title: Defligration arrestors
 
 ### Authorship & Attribution
 *   **Developer:** Eric Staggs
-*   **Resources:** e.g., MDN Web Docs, Bootstrap 5.0 Documentation
-*   **Libraries/Assets:** e.g., Google Fonts (Roboto), FontAwesome Icons, Bootstrap CSS/JS
+*   **Resources:** MDN Web Docs, Bootstrap 5.0 Documentation, W3School,YouTube
+*   **Libraries/Assets:** Google Fonts (Roboto), FontAwesome Icons, Bootstrap CSS/JS, vsCode,
 
-> "Precisioin is th art of saying what matters- and nothing more."
+> "Precisioin is the art of saying what matters- and nothing more."
 
 ---
 
