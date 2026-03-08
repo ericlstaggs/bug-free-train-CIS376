@@ -37,6 +37,7 @@ https://github.com/ericlstaggs/ericslearningrepo/wiki
 ---
 
 ### Code Block & Explanation
+* this the toolbar and all the reference to each page
 ```html
 // Example of the toobar
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
