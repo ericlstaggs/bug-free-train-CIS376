@@ -1,36 +1,37 @@
 # Defligration arrestors
 
-# [App Title: e.g., TaskMaster Pro]
+# App Title: e.g., TaskMaster Pro
 
 ### Authorship & Attribution
-*   **Developer:** [Eric Staggs]
-*   **Resources:** [e.g., MDN Web Docs, Bootstrap 5.0 Documentation]
-*   **Libraries/Assets:** [e.g., Google Fonts (Roboto), FontAwesome Icons, Bootstrap CSS/JS]
+*   **Developer:** Eric Staggs
+*   **Resources:** e.g., MDN Web Docs, Bootstrap 5.0 Documentation
+*   **Libraries/Assets:** e.g., Google Fonts (Roboto), FontAwesome Icons, Bootstrap CSS/JS
 
 > "Precisioin is th art of saying what matters- and nothing more."
 
 ---
 
 ### User Story
-**As a** [busy college student],  
-**I want** [get a place to start to organize data for the "Big Idea" and allow others to view it],  
-**so that** [we can create something that may save lives and companies money in the future with this project].
+**As a** busy college student,  
+**I want** get a place to start to organize data for the "Big Idea" and allow others to view it,  
+**so that** we can create something that may save lives and companies money in the future with this project.
 
 ---
 
 ### Links & Verification
-*   **Repository:** [https://github.com/ericlstaggs/ericslearningrepo.git]
-*   **Live Deployment:** [https://ericlstaggs.github.io/ericslearningrepo]
-*   **Design Evidence:** [https://github.com/ericlstaggs/ericslearningrepo.git]
+*   **Repository:** https://github.com/ericlstaggs/ericslearningrepo.git
+*   **Live Deployment:** https://ericlstaggs.github.io/ericslearningrepo
+*   **Design Evidence:** https://github.com/ericlstaggs/ericslearningrepo.git
 *   **Verification Note:** This application has been tested and verified for responsiveness on **Mobile (iOS/Android Chrome)** and **Desktop (Chrome/Safari)**. All accessibility best practices (alt text, labels, and contrast) have been implemented.
 
 ---
 
 ### Model & Inspiration Evidence
-[![](https://dribbble.com/tags/web-card)]([Link to GitHub Issue/Wiki])
+<img width="1888" height="801" alt="dribble-screen-shot" src="../pictures/dribble-screen-shot.png" />
+https://github.com/ericlstaggs/ericslearningrepo/wiki
 
-**Inspiration Source:** [Name of Site/App]  
-**Analysis:** I modeled my [grid layout/navigation bar] after this site because of its clean hierarchy. I improved upon it by [adding a mobile-first sidebar/changing the contrast for better readability].
+**Inspiration Source:** Dribble  
+**Analysis:** I modeled my grid layout/navigation bar after this site because of its clean hierarchy.
 
 ---
 
@@ -49,4 +50,15 @@ document.addEventListener('DOMContentLoaded', () => {
         console.log(`Search state changed: ${term}`); // Debugging log
     });
 });
+
+
+
+
+
+
+
+
+
+
+
 
