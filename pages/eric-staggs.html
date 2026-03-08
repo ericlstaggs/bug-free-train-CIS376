@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eric</title>
-    
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eric</title>
   <!-- linking the sytle sheet to this page -->
   <link href="../styles/e-style.css" rel="stylesheet">
 </head>
+
 <body>
 
-     <div class="mt-4 p-5 bg-primary text-white rounded align-content-center align-items-center d-flex flex-column">
+  <div class="mt-4 p-5 bg-primary text-white rounded align-content-center align-items-center d-flex flex-column">
     <h1 class="title-text">Eric</h1>
   </div>
   <!-- navbar code -->
@@ -44,22 +41,20 @@
               <li><a class="dropdown-item" href="../pages/nick-german.html">Nick German</a></li>
               <li><a class="dropdown-item" href="../pages/shelby-stanly.html">Shelby Stanly</a></li>
               <li><a class="dropdown-item" href="../pages/eric-staggs.html">Eric Staggs</a></li>
-              <li>
-                <!-- <hr class="dropdown-divider"> -->
-              </li>
-              <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
             </ul>
           </li>
           <li class="about">
-            <a class="nav-link" href="../about.html">About</a>
+            <a class="nav-link" href="../pages/about.html">About</a>
           </li>
           <li class="navTemplate">
             <a class="nav-link" href="../pages/content.html">Content</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            <!-- <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a> -->
+            <a class="nav-link" href="../pages/author.html">Author</a>
           </li>
         </ul>
+
         <form class="d-flex">
           <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success" type="submit">Search</button>
@@ -68,16 +63,37 @@
     </div>
   </nav>
 
-  <div class="container">
-    <p>I am 46 years old. I am a father of 3 and also animal lover. I joined the national guard right out of high school where I became a fire direction control specialist. I grew up in Collinwood TN and spent my summers in the muddy waters of Clifton TN where we had river property. I Worked at auto electronics for years as a young man until I became an electrician apprentice which fed us for years. I eventually moved on and started building industrial panels for a local shop named RLC until I moved to Georgia to start writing some full stack development for CGI. I moved on to KBR and Boeing until I landed in SAIC in Huntsville. I worked on Redstone for a couple years until I took a sabbatical after the passing of my mother. I took off on sailboats and toured the Caribbean and the Florida Keys until I decided it was time to come back home. Now I am here and I am trying to make the best out of starting over late in life. 
-	Being in the Big Idea is important as I think Nick has a device that will save lives and cut costs that should be passed onto the consumer for petroleum products. This could lead to a much larger movement for industrial parts to be created by 3D printers hopefully creating less waste, a safer working environment, and maybe a little money for the pockets that help him see this vision come to fruition. 
-</p>
+  <!-- card -->
+  <div class="row content-section">
+    <div class="col-md-5 mx-auto">
+      <div class="card">
+        <div class="card-header">
+          <h4 class="card-title rubik-mono-one-regular"></h4>
+        </div>
+        <div class="card-body">
+          <p class="card-text">Author</p>
+          <p class="card-text"><img
+              src="https://media.istockphoto.com/id/517484047/photo/sail-boat.jpg?s=612x612&w=0&k=20&c=rcY9rKK65Sw7kj-ZEsjPFehaNnexPZikr_-v6_mEQBM="
+              alt="Stage of Oil Development" class="img-fluid mx-auto" alt="Center Image"></p>
+          <p>I am 46 years old. I am a father of 3 and also animal lover. I joined the national guard right out of high
+            school where I became a fire direction control specialist. I grew up in Collinwood TN and spent my summers
+            in the muddy waters of Clifton TN where we had river property. I Worked at auto electronics for years as a
+            young man until I became an electrician apprentice which fed us for years. I eventually moved on and started
+            building industrial panels for a local shop named RLC until I moved to Georgia to start writing some full
+            stack development for CGI. I moved on to KBR and Boeing until I landed in SAIC in Huntsville. I worked on
+            Redstone for a couple years until I took a sabbatical after the passing of my mother. I took off on
+            sailboats and toured the Caribbean and the Florida Keys until I decided it was time to come back home. Now I
+            am here and I am trying to make the best out of starting over late in life.
+            Being in the Big Idea is important as I think Nick has a device that will save lives and cut costs that
+            should be passed onto the consumer for petroleum products. This could lead to a much larger movement for
+            industrial parts to be created by 3D printers hopefully creating less waste, a safer working environment,
+            and maybe a little money for the pockets that help him see this vision come to fruition.
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
 
-
-
-
-  
   <!-- footer -->
   <footer class="mt-auto py-3 bg-light border-top">
     <div class="container">
@@ -109,6 +125,7 @@
     crossorigin="anonymous"></script>
   <script src="../scripts/login-logout.js"></script>
   <script src="../scripts/session.js"></script>
-    
+
 </body>
+
 </html>
