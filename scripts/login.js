@@ -17,17 +17,19 @@ document.getElementById("loginbutton").addEventListener("click", function () {
 
     // const toolbar = document.getElementById("toolbar");
 
-    const username = sessionStorage.setItem("username", usernameInput.value);
-    const password = sessionStorage.setItem("password", passwordInput.value);
+     username = sessionStorage.setItem("username", usernameInput.value);
+     password = sessionStorage.setItem("password", passwordInput.value);
 
 
-    const userFound = users.find(user => user.username === username &&
-        user.password === passwordInput );
+    // const userFound = users.find(user => user.username === username &&
+    //     user.password === passwordInput );
 
-        if(password.value != null){
+        if(true){
+
+            console.log("we are here");
             toolbar.removeAttribute("disabled");
             console.log("Welcome " + username);
-            window.location.href = "../index.html";
+            window.location.assign("../index.html");
         } else {
             alert("Login failed");
         }
