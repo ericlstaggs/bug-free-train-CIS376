@@ -10,10 +10,6 @@
 
 <body>
 
-
-<!-- https://www.youtube.com/watch?v=H8ThscWsQV8&list=PLA9oyBlTfuCguMi9PTwvA2ewTPJ7701EI -->
-
-
     <!-- login contaniner -->
     <section>
         <div class="login-box">
@@ -22,24 +18,26 @@
                 <!-- im working here right now, please ignore the rest of this code until i say otherwise, thank you -->
                 <div class="input-box">
 
+                    <!-- username -->
                     <span class="icon">
                         <ion-icon name="person-outline"></ion-icon>
                     </span>
-                    <input type="email" class="form-control" id="emailAddress" placeholder="Enter email" required
-                        autofocus>
+                    <input type="username" class="form-control" id="username" placeholder="Enter username" required>
                 </div>
+                <!-- password -->
                 <div class="input-box">
                     <span class="icon">
                         <ion-icon name="lock-closed"></ion-icon>
                     </span>
                     <input type="password" class="form-control" id="password" placeholder="Password" required>
-                    <label>Password</label>
                 </div>
+
+
                 <div class="remember-forgot">
                     <label><input type="checkbox" value="remember-me"> Remember me</label>
                     <a href="#">Forgot password?</a>
                 </div>
-                <button type="submit">Login</button>
+                <button id="loginbutton" onclick="get" type="submit">Login</button>
                 <div class="register-link">
                     <p>Don't have an account? <a href="#">Register</a></p>
             </form>
@@ -66,30 +64,13 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <script src="../scripts/login.js"></script>
 
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
 
-
-
-    <!-- <script src="../scripts/login-logout.js"></script> -->
     <script src="../scripts/session.js"></script>
-
-
 
 </body>
 
