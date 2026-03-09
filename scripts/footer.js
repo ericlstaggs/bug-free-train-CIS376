@@ -1,4 +1,6 @@
-const FOOTER_HTML = `<footer class="mt-auto py-3 bg-light border-top">
+const FOOTER_HTML = 
+
+  `<footer class="mt-auto py-3 bg-light border-top">
       <div class="container">
         <div class="d-flex justify-content-center align-items-center gap-4 small text-muted flex-wrap">
 
