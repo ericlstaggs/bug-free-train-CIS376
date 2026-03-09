@@ -29,7 +29,5 @@ function handleSearch() {
 }
 
 // Search as you type
-// searchInput.addEventListener("input", handleSearch);
+searchInput.addEventListener("input", handleSearch);
 
-// Search on button click
-searchButton.addEventListener("click", handleSearch);

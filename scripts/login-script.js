@@ -1,38 +1,97 @@
-document.addEventListener('DOMContentLoaded', function () {
+// show login or logout btn, based on session state
+// toast msg upon logout 
 
-    console.log("password is: lasagna");
+document.addEventListener('DOMContentLoaded', () => {
+
+  const userGreeting = document.getElementById('userGreeting');
+  const searchClass = document.getElementsByClassName('searchClass');
+  userGreeting.textContent = '';
+
+  const authStatus = isAuthN(); //resolve into boolean t/f  
+  console.log('isAuthN?', authStatus);
+
+  showSignInOut();
+
+  // todo: refactor as f/n initSecretStuff. 
+  if (authStatus === true) {
+    userGreeting.textContent = `hello, ${sessionStorage.getItem('username')}`;
+
+    Object.keys(searchClass).forEach(key => {
+      searchClass[key].removeAttribute('disabled');
+    });
+
+    //load videos. 
+    loadVideoContent();
+
+  }
+
+
+  document.getElementById('btnLogout').addEventListener('click', () => {
+    showLogoutToast();
+    sessionStorage.clear();
+    console.log('isAuthN?', sessionStorage.getItem('isAuthN'));
+    showSignInOut();
+    userGreeting.textContent = '';
+
+    Object.keys(searchClass).forEach(key => {
+      searchClass[key].disabled = true;
+      searchClass[key].value = '';
+    });
+
+    unloadVideoContent();
+  });
+
 });
 
 
-//when button clicked, get username and password. 
+function isAuthN() {
+  return sessionStorage.getItem('isAuthN') === 'true';
+}
 
-const login = document.getElementById('login-button');
+function showSignInOut() {
+  if (isAuthN()) {
+    //show logout
+    const btnLogout = document.getElementById('btnLogout');
+    btnLogout.classList.remove('d-none');
 
-//pass an Immediately Invoked Function Expression: IIFE.
-login.addEventListener('click', function (event) {
-  console.log('clicked');
-  
-  
-  // Get form values from the DOM 
-  const username = document.getElementById('username').value;
-  const password = document.getElementById('password').value;
+    //hide login
+    const btnLogin = document.getElementById('btnLogin');
+    btnLogin.classList.add('d-none');
+  }
+  else if (!isAuthN()) {
+    //hide logout
+    const btnLogout = document.getElementById('btnLogout');
+    btnLogout.classList.add('d-none');
 
-  console.log("username + pwd:", username + ", " + password);
+    //show login
+    const btnLogin = document.getElementById('btnLogin');
+    btnLogin.classList.remove('d-none');
+  }
 
-  // Store in session storage
-  sessionStorage.setItem('username', username);
-  sessionStorage.setItem('password', password);
-  sessionStorage.setItem('isAuthN', 'true');
- 
-  // sessionStorage.setItem('loginTimestamp', new Date().toISOString());
-  // sessionStorage.setItem('loginAttempts', (parseInt(sessionStorage.getItem('loginAttempts') || '0') + 1).toString());
+}
 
-  // Log to console
-  console.log('session username:', username);
-  console.log('session password:', password);
+// Show a Bootstrap 5 toast message for logout
+function showLogoutToast() {
+  // Create toast container if it doesn't exist
+  const toastContainer = document.getElementById('toast-container');
+  // Create toast element
+  const toast = document.createElement('div');
+  toast.className = 'toast align-items-center text-bg-success border-0 show';
+  toast.setAttribute('role', 'alert');
+  toast.setAttribute('aria-live', 'assertive');
+  toast.setAttribute('aria-atomic', 'true');
+  toast.innerHTML = `
+    <div class="d-flex">
+      <div class="toast-body">
+        You have been logged out.
+      </div>
+      <button type="button" class="btn-close btn-close-white me-2 m-auto" data-bs-dismiss="toast" aria-label="Close"></button>
+    </div>
+  `;
+  toastContainer.appendChild(toast);
 
-
-  window.location.assign("../index.html"); 
-
-});
-
+  // Automatically remove toast after 3 seconds
+  setTimeout(() => {
+    toast.remove();
+  }, 3000);
+}
